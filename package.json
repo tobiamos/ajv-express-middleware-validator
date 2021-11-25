@@ -1,0 +1,37 @@
+{
+  "name": "ajv-express-validator",
+  "version": "1.0.0",
+  "description": "A fast JSON Schema based express middlware validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiamos/ajv-express-middleware-validator.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "ajv",
+    "JSON",
+    "Schema"
+  ],
+  "author": "Amos Tobi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobiamos/ajv-express-middleware-validator/issues"
+  },
+  "homepage": "https://github.com/tobiamos/ajv-express-middleware-validator#readme",
+  "dependencies": {
+    "@hapi/boom": "^9.1.4",
+    "ajv": "^8.8.2",
+    "express": "^4.17.1",
+    "fluent-json-schema": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3"
+  }
+}

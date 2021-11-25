@@ -24,7 +24,12 @@ const validate = (schema) => function validateRequest(req, res, next) {
     const valid = ajvValidate(toValidate[key]);
 
     if (!valid) {
-      errors.push(ajvValidate.errors[0]);
+      const error = ajvValidate.errors[0];
+
+      const errorMessage = `${error.instancePath} ${error.message}`;
+
+      error.errorMessage = errorMessage;
+      errors.push(error);
     }
   });
 

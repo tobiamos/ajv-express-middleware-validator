@@ -76,7 +76,7 @@ router.get(
 app.use((err, req, res, next) => { 
   if (err.isBoom) {
     res.status(err.output.statusCode);
-    return res.json(err);
+   return res.json({ error: err.data[0].errorMessage });
   }
 
 //...

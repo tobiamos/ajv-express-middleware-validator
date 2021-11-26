@@ -63,7 +63,7 @@ const schema = {
 const validate = require("ajv-express-validator");
 const loginSchema = require("./loginSchema");
 
-router.get(
+app.post(
   '/login',
   validate(loginSchema),
   controller.login,
